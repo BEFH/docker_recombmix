@@ -27,7 +27,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: befh/bcftools-htslib-samtools
+          images: befh/recombmix
       -
         name: Build and push
         uses: docker/build-push-action@v6
