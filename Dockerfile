@@ -8,6 +8,7 @@ RUN apk add --no-cache git g++ boost-dev && \
     cd src && \
     g++ -std=c++17 RecombMix.cpp -lboost_iostreams -o RecombMix -Os && \
     mv RecombMix /usr/local/bin/ && \
+    ln -s /bin/sh /bin/bash && \
     cd && \
     rm -rf build
 
